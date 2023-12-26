@@ -1,0 +1,69 @@
+---
+const {datosLanding} = Astro.props
+const {casa_club,alberca,area_comun,pavimento,cableado,luz_led,estacionamiento ,casa_club_texto,alberca_texto,area_texto,pavimento_texto,led_texto,estacionamiento_texto, cableado_texto} = datosLanding
+---
+
+<div class="amenidades w-full h-auto py-[100px]">
+    <h3 class="text-[#134a16] text-center text-4xl mb-5 uppercase">Amenidades</h3>
+    <div class="row-amenidades w-[90%] mx-auto max-w-[1140px] flex flex-col justify-center items-center md:grid md:grid-cols-6 md:justify-items-around md:gap-2 mt-5"> 
+        <div class="amenidad">
+            <img src={casa_club.url} alt="casa" loading="lazy">
+            <h3>{casa_club_texto}</h3>
+        </div>
+        <div class="amenidad">
+            <img src={alberca.url} alt="alberca" loading="lazy">
+            <h3>{alberca_texto}</h3>
+        </div>
+        <div class="amenidad">
+            <img src={area_comun.url} alt="comun" loading="lazy">
+            <h3>{area_texto}</h3>
+        </div>
+        <div class="amenidad">
+            <img src={pavimento.url} alt="pavimento" loading="lazy">
+            <h3>{pavimento_texto}</h3>
+        </div>
+        <div class="amenidad">
+            <img src={cableado.url} alt="cableado" loading="lazy">
+            <h3>{cableado_texto}</h3>
+        </div>
+        <div class="amenidad">
+            <img src={luz_led.url} alt="cableado" loading="lazy">
+            <h3>{led_texto}</h3>
+        </div>
+       
+      
+       
+       
+       
+       
+       
+    </div> 
+</div>
+
+<style>
+
+    .amenidad{
+        width: 90%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    /* @media(min-width:768px){
+        .amenidad{
+            width: 24%;
+        }
+    } */
+   .amenidad img {
+    width: 100px;
+    height: 100px;
+   }
+
+   .amenidad h3{
+    font-size: 22px;
+    text-align: center;
+   }
+</style> 
