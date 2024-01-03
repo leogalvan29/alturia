@@ -29,6 +29,7 @@ console.log(datosLanding)
 	<Amenidades 
 	 datosLanding={datosLanding}
 	/>
+	<a href="https://api.whatsapp.com/send?phone=526672320689&text=Hola%20necesito%20informacion" class="whatsapp"><img src={datosLanding.whatsapp.url} alt="whatsapp"> </a>
 </Layout>
 
 <style>
@@ -88,6 +89,15 @@ console.log(datosLanding)
 		gap: 2rem;
 		padding: 0;
 	}
+	.whatsapp{
+		position: fixed; 
+		right: 3%;
+		bottom: 50%;
+	}
+	 .whatsapp img{
+		width: 64px;
+		height: 64px;
+	 }
 </style>
 
 <script>
